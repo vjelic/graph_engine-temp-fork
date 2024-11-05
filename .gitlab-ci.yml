@@ -1,0 +1,29 @@
+image:  artifactory.xilinx.com/vitis-ai-docker-dev/minerva:latest
+
+variables:
+     GIT_SUBMODULE_STRATEGY: recursive
+
+before_script:
+  - source /opt/xilinx/xrt/setup.sh
+  - export CXX=/opt/rh/devtoolset-9/root/usr/bin/c++
+  - export CC=/opt/rh/devtoolset-9/root/usr/bin/gcc
+  - export SIMNOW_PATH=/tools/dist/amd/simnow/simnow-linux64-internal-2022-04-06/simnow-linux64-internal-2022-04-06
+  - export IPU_SCRIPT=/scratch/bryanloz/bin/ipu.script
+  - export XCL_EMULATION_MODE=hw_emu
+  - export XRT_INI_PATH=/scratch/bryanloz/bin/xrt.ini
+  - export XLNX_VART_FIRMWARE=$CI_PROJECT_DIR/tests/models/1x3_oo.xclbin
+  - export PATH=/scratch/bryanloz/bin:$PATH
+
+build:
+  stage: build
+  tags:
+    - tvm-vitis
+  only:
+    - merge_requests
+    - master
+  script:
+    - mkdir build
+    - (cd build; cmake ..; make -j)
+    - (cd build/tests; ctest --verbose)
+    - (cd build; make doxygen)
+    - cp -r build/docs/doxygen/* /proj/rdi/staff/bryanloz/
