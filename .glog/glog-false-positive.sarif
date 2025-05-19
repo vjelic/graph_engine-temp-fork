@@ -1,0 +1,700 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "DS176209",
+              "name": "SuspiciousComment",
+              "shortDescription": {
+                "text": "A \"TODO\" or similar was left in source code, possibly indicating incomplete functionality"
+              },
+              "fullDescription": {
+                "text": "Suspicious comment: A \"TODO\" or similar was left in source code, possibly indicating incomplete functionality"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "helpUri": "https://github.com/Microsoft/DevSkim/blob/main/guidance/DS176209.md",
+              "help": {
+                "text": "A \"TODO\" or similar was left in source code, possibly indicating incomplete functionality",
+                "markdown": "Visit [https://github.com/Microsoft/DevSkim/blob/main/guidance/DS176209.md](https://github.com/Microsoft/DevSkim/blob/main/guidance/DS176209.md) for guidance on this issue."
+              },
+              "properties": {
+                "DevSkimSeverity": "ManualReview",
+                "DevSkimConfidence": "High",
+                "precision": "high",
+                "problem.severity": "recommendation",
+                "tags": [
+                  "DS176209"
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/kernel_runners/DpuKernelRunner.hpp"
+                },
+                "region": {
+                  "startLine": 877,
+                  "startColumn": 30,
+                  "endLine": 877,
+                  "endColumn": 34,
+                  "charOffset": 40858,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/utils/FixFloat.hpp"
+                },
+                "region": {
+                  "startLine": 441,
+                  "startColumn": 17,
+                  "endLine": 441,
+                  "endColumn": 21,
+                  "charOffset": 18088,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/utils/FixFloat.hpp"
+                },
+                "region": {
+                  "startLine": 362,
+                  "startColumn": 17,
+                  "endLine": 362,
+                  "endColumn": 21,
+                  "charOffset": 14545,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/utils/FixFloat.hpp"
+                },
+                "region": {
+                  "startLine": 274,
+                  "startColumn": 17,
+                  "endLine": 274,
+                  "endColumn": 21,
+                  "charOffset": 10747,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/utils/FixFloat.hpp"
+                },
+                "region": {
+                  "startLine": 193,
+                  "startColumn": 17,
+                  "endLine": 193,
+                  "endColumn": 21,
+                  "charOffset": 7145,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/utils/FixFloat.hpp"
+                },
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 17,
+                  "endLine": 111,
+                  "endColumn": 21,
+                  "charOffset": 3646,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/kernel_runners/utils/FastPad.hpp"
+                },
+                "region": {
+                  "startLine": 442,
+                  "startColumn": 9,
+                  "endLine": 442,
+                  "endColumn": 13,
+                  "charOffset": 18129,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/kernel_runners/utils/FastPad.hpp"
+                },
+                "region": {
+                  "startLine": 364,
+                  "startColumn": 15,
+                  "endLine": 364,
+                  "endColumn": 19,
+                  "charOffset": 14614,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/kernel_runners/utils/FastPad.hpp"
+                },
+                "region": {
+                  "startLine": 284,
+                  "startColumn": 9,
+                  "endLine": 284,
+                  "endColumn": 13,
+                  "charOffset": 10722,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/kernel_runners/utils/FastPad.hpp"
+                },
+                "region": {
+                  "startLine": 207,
+                  "startColumn": 9,
+                  "endLine": 207,
+                  "endColumn": 13,
+                  "charOffset": 7740,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/kernel_runners/utils/FastPad.hpp"
+                },
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 9,
+                  "endLine": 120,
+                  "endColumn": 13,
+                  "charOffset": 4398,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/graph_runner.hpp"
+                },
+                "region": {
+                  "startLine": 313,
+                  "startColumn": 41,
+                  "endLine": 313,
+                  "endColumn": 45,
+                  "charOffset": 11501,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/graph_runner.hpp"
+                },
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 14,
+                  "endLine": 247,
+                  "endColumn": 18,
+                  "charOffset": 9343,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/kernel_runner.hpp"
+                },
+                "region": {
+                  "startLine": 253,
+                  "startColumn": 7,
+                  "endLine": 253,
+                  "endColumn": 11,
+                  "charOffset": 9884,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "include/graph-engine/buffers.hpp"
+                },
+                "region": {
+                  "startLine": 185,
+                  "startColumn": 7,
+                  "endLine": 185,
+                  "endColumn": 11,
+                  "charOffset": 5391,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        },
+        {
+          "ruleId": "DS176209",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Suspicious comment"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/graph-engine/op_runner.hpp"
+                },
+                "region": {
+                  "startLine": 218,
+                  "startColumn": 7,
+                  "endLine": 218,
+                  "endColumn": 11,
+                  "charOffset": 7379,
+                  "charLength": 4,
+                  "snippet": {
+                    "text": "TODO",
+                    "rendered": {
+                      "text": "TODO",
+                      "markdown": "`TODO`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "ManualReview",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Hygiene.Comment.Suspicious"
+            ]
+          }
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
